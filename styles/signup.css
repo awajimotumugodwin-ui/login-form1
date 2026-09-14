@@ -97,6 +97,20 @@ body {
     letter-spacing: 1px;
 }
 
+
+.input-box input:focus {
+    border-color: #FFF;
+    box-shadow: 0 0 8px rgba(255, 255, 255, .35);
+}
+
+.input-box input:not(:placeholder-shown):invalid{
+  border-color: #ff8a8a;
+}
+
+.input-box input:not(:placeholder-shown):valid{
+  border-color: #9dffb0;
+}
+
 .wrapper .remember-forgot {
     display: flex;
     justify-content: space-between;

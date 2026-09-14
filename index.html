@@ -15,33 +15,34 @@
 
             <h1>Sign Up</h1>
             <div class="input-box">
-                <input class="text" type="text" name="first-name" placeholder="First Name" autocomplete="given-name"
-                    required>
+                <input class="text" type="text" name="first-name" placeholder="First Name" pattern="[a-zA-Z0-9_]{3,20}" autocomplete="given-name" required>
+                <span class="field-error" id="first-name-error"></span>
             </div>
             <div class="input-box">
-                <input class="text" type="text" name="last-name" placeholder="Last Name" autocomplete="family-name"
-                    required>
+                <input class="text" type="text" name="last-name" placeholder="Last Name" pattern="[a-zA-Z0-9_]{3,20}" autocomplete="family-name" required>
+                <span class="field-error" id="last-name-error"></span>
             </div>
             <div class="input-box">
-                <input class="text" type="text" name="username" placeholder="Username" autocomplete="username" required>
+                <input class="text" type="text" name="username" placeholder="Username" pattern="[a-zA-Z0-9_]{3,20}" autocomplete="username" required>
                 <i class="field-icon bx bxs-user"></i>
+                 <span class="field-error" id="username-error"></span>
             </div>
             <div class="input-box">
                 <input class="password-toggle" type="checkbox" id="show-password">
-                <input class="password-input" type="text" name="password" placeholder="Password"
-                    autocomplete="new-password" required>
+                <input class="password-input" type="text" name="password" placeholder="Password" minlength="8" autocomplete="new-password" required>
                 <label class="field-icon password-icon" for="show-password" aria-label="Show password">
                     <i class="bx bx-hide"></i>
                 </label>
+                <span class="field-error" id="password-error"></span>
             </div>
             <div class="input-box">
                 <input class="password-toggle" type="checkbox" id="show-confirm-password">
-                <input class="password-input" type="text" name="confirm-password" placeholder="Confirm Password"
-                    autocomplete="new-password" required>
+                <input class="password-input" type="text" name="confirm-password" placeholder="Confirm Password" minlength="8" autocomplete="new-password" required>
                 <label class="field-icon password-icon" for="show-confirm-password"
                     aria-label="Show confirmed password">
                     <i class="bx bx-hide"></i>
                 </label>
+                 <span class="field-error" id="confirmPassword-error"></span>
             </div>
 
             <button type="submit" class="btn">Sign Up</button>
