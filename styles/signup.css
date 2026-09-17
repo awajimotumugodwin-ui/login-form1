@@ -24,10 +24,9 @@ body {
     backdrop-filter: blur(9px);
     color: #fff;
     border-radius: 12px;
-    padding: 40px auto;
+    padding: 32px 40px;
     justify-content: center;
     display: flex;
-    margin: 40px;
 }
 
 .wrapper h1 {
@@ -38,16 +37,18 @@ body {
 
 .wrapper .input-box {
     position: relative;
-    width: 100%;
+    width:100%;
     height: 50px;
-    margin: 30px auto;
+    margin: 30px;
 }
 
-.signup-page .wrapper {
+.signup-page .wrapper,
+.forgot-password-page .wrapper {
     padding: 24px 32px;
 }
 
-.signup-page .input-box {
+.signup-page .input-box,
+.forgot-password-page .input-box {
     margin: 16px auto;
 }
 
