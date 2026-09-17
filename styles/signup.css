@@ -24,14 +24,16 @@ body {
     backdrop-filter: blur(9px);
     color: #fff;
     border-radius: 12px;
-    padding: 30px 40px;
+    padding: 40px auto;
     justify-content: center;
     display: flex;
+    margin: 40px;
 }
 
 .wrapper h1 {
     font-size: 36px;
     text-align: center;
+    margin-top: 26px;
 }
 
 .wrapper .input-box {
@@ -42,7 +44,7 @@ body {
 }
 
 .signup-page .wrapper {
-    padding: 16px 32px;
+    padding: 24px 32px;
 }
 
 .signup-page .input-box {
