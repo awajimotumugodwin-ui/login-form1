@@ -9,17 +9,19 @@
     <title>Sign Up</title>
 </head>
 
-<body>
+<body class="signup-page">
     <div class="wrapper">
         <form action="login.html" method="get">
 
             <h1>Sign Up</h1>
             <div class="input-box">
                 <input class="text" type="text" name="first-name" placeholder="First Name" pattern="[a-zA-Z0-9_]{3,20}" autocomplete="given-name" required>
+                <i class="field-icon bx bxs-user"></i>
                 <span class="field-error" id="first-name-error"></span>
             </div>
             <div class="input-box">
                 <input class="text" type="text" name="last-name" placeholder="Last Name" pattern="[a-zA-Z0-9_]{3,20}" autocomplete="family-name" required>
+                <i class="field-icon bx bxs-user"></i>
                 <span class="field-error" id="last-name-error"></span>
             </div>
             <div class="input-box">
